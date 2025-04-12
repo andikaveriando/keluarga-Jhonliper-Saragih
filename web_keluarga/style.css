@@ -1,0 +1,97 @@
+/* Atur tata letak anggota keluarga */
+.anggota-keluarga {
+    display: flex;
+    align-items: center; /* Membuat foto dan biodata sejajar vertikal */
+    margin-bottom: 20px; /* Jarak antar anggota keluarga */
+  }
+  
+  /* Gaya untuk gambar anggota keluarga */
+  .anggota-keluarga img {
+    margin-right: 20px; /* Jarak antara foto dan biodata */
+    border-radius: 10px; /* Membuat sudut gambar agak melengkung */
+  }
+  
+  /* Gaya untuk biodata anggota keluarga */
+  .biodata {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px; /* Maksimal lebar biodata */
+  }
+  
+  .biodata h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px; /* Jarak antara nama dan detail lainnya */
+  }
+  
+  .biodata p {
+    font-size: 1em;
+    margin: 5px 0; /* Jarak antar paragraf */
+  }
+  
+  .biodata span {
+    font-weight: bold;
+    margin-right: 10px; /* Jarak antara label dan informasi */
+  }
+  
+  /* Styling untuk bagian lain */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+  }
+
+  /* Gaya untuk gambar rumah */
+  section img {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Efek animasi fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terapkan animasi pada section */
+section {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Efek hover pada gambar */
+.anggota-keluarga img,
+section img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anggota-keluarga img:hover,
+section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+  
